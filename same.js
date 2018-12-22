@@ -20,10 +20,13 @@ function same(arr1, arr2) {
 			// if correctIndex or the index is not found (-1) return false
 			return false;
 		}
+		console.log(arr2); // Just to see the array splicing
 		arr2.splice(correctIndex, 1);
 	}
 	return true
 }
 
-console.log(same([1,2,1,2], [4, 4, 1])); //false
-console.log(same([1,2,1,2], [4, 4, 1,1])); //True
+console.log(same([1,5, 7, 9], [81, 25, 49, 1])); //True
+
+
+// Time complexity - O(n^2)
