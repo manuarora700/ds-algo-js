@@ -5,7 +5,7 @@
 // If manipulating the original array is available.
 
 function countUniqueValues(arr) {
-
+	if(arr.length == 0) return 0;
 	let i = 0; // stays at 0 index -- increments if a new value is found
 	for(let j = 1; j < arr.length; j++) {
 		// looks for new values
