@@ -4,6 +4,8 @@
 
 // If manipulating the original array is available.
 
+// O(n) time complexity
+
 function countUniqueValues(arr) {
 	if(arr.length == 0) return 0;
 	let i = 0; // stays at 0 index -- increments if a new value is found
